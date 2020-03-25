@@ -12,13 +12,19 @@
     <meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <script>// IF THE BROWSER IS INTERNET EXPLORER 10
     if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
-        window.alert('This is IE 10');
+        document.getElementById('ie10').classList.add('visible')
     } else {
-        window.alert('This is not IE 10');
+        document.getElementById('ie10').classList.add('visible')
     }</script>
 </head>
 <body>
-Hello world
-<img src="https://i.imgur.com/QhOQx8X.jpg" alt="">
+<style>
+    .ie10.visible{
+        display: block;
+    }
+</style>
+<div class="ie10" style="position:fixed;width: 100%;height: 100%;background: #ffffff;color: #000000;">
+    this website doesn't support ie 10.
+</div>
 </body>
 </html>
