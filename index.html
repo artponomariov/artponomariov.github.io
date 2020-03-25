@@ -10,5 +10,6 @@
 </head>
 <body>
 Hello world
+<img src="https://i.imgur.com/QhOQx8X.jpg" alt="">
 </body>
 </html>
