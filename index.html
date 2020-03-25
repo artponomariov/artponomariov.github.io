@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:image" content="https://i.imgur.com/QhOQx8X.jpg">
     <title>Document</title>
+    <meta property="og:title" content="European Travel Destinations">
+    <meta property="og:description" content="Offering tour packages for individuals or groups.">
+    <meta property="og:url" content="http://euro-travel-example.com/index.htm">
 </head>
 <body>
 Hello world
