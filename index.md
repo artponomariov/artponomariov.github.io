@@ -11,10 +11,11 @@
     <meta property="og:description" content="Offering tour packages for individuals or groups.">
     <meta property="og:url" content="http://euro-travel-example.com/index.htm">
     <script>// IF THE BROWSER IS INTERNET EXPLORER 10
-        if (navigator.appVersion.indexOf("MSIE 10") !== -1)
-        {
-            window.alert('This is IE 10');
-        }</script>
+    if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+        window.alert('This is IE 10');
+    } else {
+        window.alert('This is not IE 10');
+    }</script>
 </head>
 <body>
 Hello world
