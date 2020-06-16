@@ -1,0 +1,107 @@
+.box {
+  overflow-x: hidden;
+}
+
+.box--purple {
+  color: $color-contrast;
+  background-color: $color-accent;
+}
+
+.box--hero {
+  background-image: url("../img/bg-hero-round-s.svg"),
+  url("../img/bg-hero-round-m.svg"),
+  url("../img/bg-hero-round-l.svg"),
+  url("../img/bg-hero-square.svg");
+  background-repeat: no-repeat;
+  background-position: top 17% left 36.8%,
+  top 52% left 0,
+  top 12% right 0,
+  bottom 18.6% right 52.8%;
+  background-size: 54px auto,
+  90px auto,
+  126px auto,
+  157px auto;
+
+  @include laptop {
+    background-image: url("../img/bg-hero-round-s.svg"),
+    url("../img/bg-hero-square.svg");
+    background-repeat: no-repeat;
+    background-position: top 15.5% left 35.7%,
+    bottom 17.6% right 53.5%;
+    background-size: 54px auto,
+    148px auto;
+  }
+
+  @include tablet {
+    background-image: none;
+  }
+}
+
+.box--white {
+  color: $color-base;
+  background-color: $color-contrast;
+}
+
+.box--lilac {
+  color: $color-base;
+  background-color: $bg-blue;
+}
+
+.box--sand {
+  color: $color-base;
+  background-color: $bg-sand;
+}
+
+.box--gray {
+  color: $color-base;
+  background-color: $bg-gray;
+}
+
+.box--dots {
+  color: $color-base;
+  background-color: $color-contrast;
+  background-image: url("../img/pattern.svg");
+  background-repeat: repeat;
+}
+
+.box--cta-purple {
+  margin-top: 108px;
+  background-color: $color-accent;
+  background-image: url("../img/bg-hero-round-s.svg"),
+  url("../img/bg-hero-round-m.svg"),
+  url("../img/bg-hero-round-l.svg"),
+  url("../img/bg-hero-square.svg");
+  background-repeat: no-repeat;
+  background-position: top 17% left 36.8%,
+  top 52% left 0,
+  top 12% right 0,
+  bottom 18.6% right 12.8%;
+  background-size: 54px auto,
+  90px auto,
+  126px auto,
+  157px auto;
+  color: $color-contrast;
+}
+
+.box--pattern {
+  position: relative;
+  height: 100px;
+
+
+  &:after {
+    content: "";
+    background: url("/img/pattern.svg") 100% repeat;
+    display: block;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+  @include tablet{
+    &:after {
+    }
+  }
+}

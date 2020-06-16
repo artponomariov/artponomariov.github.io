@@ -1,0 +1,94 @@
+extends ../global/layout
+include ../mixins/svg
+include ../mixins/button
+include ../mixins/button-play
+include ../mixins/picture
+include ../mixins/form
+include ../mixins/download
+
+block variables
+  -
+    const lang = "ru";
+    const title = "Dialog";
+    const routeClass = "js-route-main";
+
+
+block content
+
+  section.hero.hero--download.box--lilac
+    +hero({
+      id: "macos",
+      title: "macOS",
+      text: "Работает на macOS 10.10 (Yosemite) и выше",
+      link: "/",
+    })
+    +hero({
+      id: "windows",
+      title: "Windows",
+      text: "Работает на macOS 10.10 (Yosemite) и выше",
+      link: "/",
+    })
+    +hero({
+      id: "ios",
+      title: "iOS",
+      text: "Работает на macOS 10.10 (Yosemite) и выше",
+      link: "/",
+    })
+    +hero({
+      id: "android",
+      title: "Windows",
+      text: "Работает на macOS 10.10 (Yosemite) и выше",
+      link: "/",
+    })
+    +hero({
+      id: "linux",
+      title: "Windows",
+      text: "Работает на macOS 10.10 (Yosemite) и выше",
+      link: "/",
+    })
+
+  section.download
+    .wrapper.wrapper--main
+      .wrap.wrap--cards
+        +col({
+          id: 'windows',
+          title: 'Скачать для Windows',
+          iconName: 'windows',
+          link: '/',
+          select: ['.exe', '.msi'],
+        })
+        +col({
+          id: 'linux',
+          title: 'Скачать для Linux',
+          iconName: 'linux',
+          link: '/',
+          select: ['.deb', '.deb x86', '.rpm x86', '.rpm'],
+        })
+        +col({
+          id: 'ios',
+          title: 'Скачать для iOS',
+          iconName: 'ios',
+          qrName: 'ios',
+          link: '/',
+        })
+        +col({
+          id: 'android',
+          title: 'Скачать для Android',
+          qrName: 'android',
+          iconName: 'android',
+          link: '/',
+        })
+        +col({
+          id: 'macos',
+          title: 'Скачать для macOS',
+          iconName: 'ios',
+          qrName: 'ios',
+          link: '/',
+        })
+        +col({
+          id: 'web',
+          title: 'Открыть Web версию',
+          link: '/',
+          isNoInstruction: true,
+          isButton: true
+        })
