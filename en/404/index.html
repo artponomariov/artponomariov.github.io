@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Dialog</title>
+  <title>404</title>
   <link rel="preload" href="fonts/Euclid-CircularA-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
@@ -25,7 +25,7 @@
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Get request</span>
-                </button><a class="main-nav__link main-nav__link--no-padding" href="/ru/blog"><span class="header__lang">ru</span><span>На русском</span></a>
+                </button><a class="main-nav__link main-nav__link--no-padding" href="/ru/404"><span class="header__lang">ru</span><span>На русском</span></a>
               </div>
             </nav>
           </div>
@@ -33,7 +33,24 @@
         </div>
       </header>
       <main class="page__content">
-        <div>123123123123123130000</div>
+        <section class="hero hero--main hero--404">
+          <div class="hero__wrapper">
+            <div class="hero__left">
+              <h1 class="hero__title">We can't find a page you are looking for</h1>
+              <p class="hero__text">Please check if you entered a valid url, and try again.</p><a class="button button--accent button--link" href="/"><span>Go to homepage</span>
+                <svg width="16" height="15" aria-hidden="true">
+                  <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+            <div class="hero__right">
+              <div class="hero__img">
+                <picture>
+                  <source type="image/webp" srcset="/img/404@1x.webp 1x, /img/404@2x.webp 2x"/><img src="/img/404@1x.png" srcset="/img/404@2x.png 2x" alt="Notebook or mobile phone photo" width="682" loading="lazy"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="page__footer">
         <footer class="footer">
@@ -84,17 +101,13 @@
               </ul>
             </div>
             <ul class="footer__doc-links">
-              <li><a href="/" target="_blank" rel="noopener noreferrer">Social responsibility</a>
-                <!--a(href!=`/${lang === "ru" ? "ru" : "en"}${doc.link}` target="_blank" rel="noopener noreferrer")=doc.text-->
+              <li><a href="/en/public" target="_blank" rel="noopener noreferrer">Social responsibility</a>
               </li>
-              <li><a href="/" target="_blank" rel="noopener noreferrer">Legal Information</a>
-                <!--a(href!=`/${lang === "ru" ? "ru" : "en"}${doc.link}` target="_blank" rel="noopener noreferrer")=doc.text-->
+              <li><a href="/en/legal" target="_blank" rel="noopener noreferrer">Legal Information</a>
               </li>
-              <li><a href="/" target="_blank" rel="noopener noreferrer">Processing personal data</a>
-                <!--a(href!=`/${lang === "ru" ? "ru" : "en"}${doc.link}` target="_blank" rel="noopener noreferrer")=doc.text-->
+              <li><a href="/docs/privacy_policy.pdf" download="privacy policy" target="_blank" rel="noopener noreferrer">Processing personal data</a>
               </li>
-              <li><a href="/" target="_blank" rel="noopener noreferrer">Anti-corruption policy</a>
-                <!--a(href!=`/${lang === "ru" ? "ru" : "en"}${doc.link}` target="_blank" rel="noopener noreferrer")=doc.text-->
+              <li><a href="/docs/anti_corruption_policy.pdf" download="anti corruption policy" target="_blank" rel="noopener noreferrer">Anti-corruption policy</a>
               </li>
             </ul>
             <div class="footer__copyright">
