@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Интеграции | dialog</title>
+  <title>Поддержка | dialog</title>
   <meta name="description" content="это корпоративный мессенджер с возможностью установки на внутренний сервер организации">
   <link rel="preload" href="/fonts/Euclid-CircularA-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
@@ -27,7 +27,7 @@
               </ul>
               <div class="main-nav__user-actions">
                 <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Получить предложение</span>
-                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/integrations
+                </button><a class="main-nav__link main-nav__link--no-padding" href="/en/support
             "><span class="header__lang">en</span><span>In English</span></a>
               </div>
             </nav>
@@ -36,117 +36,65 @@
         </div>
       </header>
       <main class="page__content">
-        <section class="hero hero--main hero--integrations hero--square-both">
-          <div class="hero__wrapper">
-            <div class="hero__left">
-              <h1 class="hero__title">Интеграции делают Dialog еще лучше</h1>
-            </div>
-            <div class="hero__right">
-              <div class="hero__img">
-                <picture>
-                  <source type="image/webp" srcset="/img/pages/integrations/hero@1x.webp 1x, /img/pages/integrations/hero@2x.webp 2x"/><img src="/img/pages/integrations/hero@1x.png" srcset="/img/pages/integrations/hero@2x.png 2x" alt="Фото ноутбука и мобильного телефона" width="682" loading="lazy"/>
-                </picture>
-              </div>
-            </div>
+        <div class="page-title box box--dots">
+          <div class="page-title__wrapper">
+            <h1>Обратная связь</h1>
           </div>
-        </section>
-        <section class="integrations">
+        </div>
+        <div class="feedback">
           <div class="wrapper wrapper--main">
-            <h2>Интегрируйте свои приложения с Dialog и автоматизируйте рабочие процессы</h2>
-            <div class="wrap wrap--cards">
-              <div class="col">
-                <div class="card card--outline">
-                  <div class="wrap wrap--c wrap--up">
-                    <svg width="150" height="90" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-api-dialog"></use>
-                    </svg>
-                  </div>
-                  <div class="wrap wrap--c wrap--dc wrap--mid">
-                    <h4>API</h4>
-                    <p>API позволяет другим приложениям взаимодействовать с Dialog. Используйте функции корпоративного мессенджера и создавайте новые сервисы для нужд бизнеса.</p>
-                  </div>
-                  <div class="wrap wrap--bot wrap--sb wrap--w"><a class="link link--accent" href="https://dialogs.github.io/api-schema/" target="_blank">Документация</a></div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card--outline">
-                  <div class="wrap wrap--c wrap--up">
-                    <svg width="150" height="90" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-sdk"></use>
-                    </svg>
-                  </div>
-                  <div class="wrap wrap--c wrap--dc wrap--mid">
-                    <h4>Dialog Bot SDK</h4>
-                    <p>Bot SDK позволяет создавать ботов и чат-ботов для Dialog. Боты оптимизируют повторяющиеся рутинные операции и освобождают время для более сложных задач.</p>
-                  </div>
-                  <div class="wrap wrap--bot wrap--sb wrap--w wrap--ac"><a class="link link--accent" href="https://dialogs.github.io/bots-docs/#/" target="_blank">Документация</a>
-                    <div class="wrap wrap--ac"><a class="link link--accent" href="https://github.com/dialogs/python-bot-sdk" target="_blank">Python</a><span>&nbsp;|&nbsp;</span><a class="link link--accent" href="https://github.com/dialogs/java-bot-sdk" target="_blank">Java</a><span>&nbsp;|&nbsp;</span><a class="link link--accent" href="https://github.com/dialogs/js-bot-sdk" target="_blank">Javascript</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card card--outline">
-                  <div class="wrap wrap--c wrap--up">
-                    <svg width="150" height="90" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-graphql"></use>
-                    </svg>
-                  </div>
-                  <div class="wrap wrap--c wrap--dc wrap--mid">
-                    <h4>GraphQL</h4>
-                    <p>Интегрируйте Dialog с внешними системами и управляйте данными через команды GraphQL.</p>
+            <div class="wrap wrap--gap-lg wrap--as wrap--sb wrap--main">
+              <div class="col col--left">
+                <div class="form form--main form--feedback box box--white">
+                  <div class="form__wrapper">
+                    <form class="form__content" action="#" method="POST" autocomplete="on" id="offer-form">
+                      <div class="form__input-text-wrap">
+                        <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1">
+                          <input type="text" id="name-1" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
+                          <label for="name-1">Ваше имя</label>
+                        </div>
+                        <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4">
+                          <input type="text" id="company-1" name="company" placeholder="Название компании" required="required"/>
+                          <label for="company-1">Название компании</label>
+                        </div>
+                        <div class="form__form-field form__form-field--fw">
+                          <div class="field-textarea">
+                            <label>
+                              <textarea name="message" required="required"></textarea><span>Чем мы можем вам помочь?</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__checkbox-wrap">
+                        <div class="form__form-field form__form-field--checkbox">
+                          <input class="visually-hidden" type="checkbox" id="accept-1" name="accepted" checked="checked" required="required"/>
+                          <label for="accept-1">Я согласен на обработку данных</label>
+                        </div>
+                      </div>
+                      <button class="button button--accent button--form" type="submit"><span>Отправить заявку</span>
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="box--pattern"></div>
-        </section>
-        <section class="integrations">
-          <div class="wrapper wrapper--main">
-            <h3>Интеграция с минимальным использованием кода</h3>
-            <div class="wrap wrap--cards">
-              <div class="col">
-                <div class="card card--outline">
-                  <div class="wrap wrap--c wrap--up">
-                    <svg width="150" height="90" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-zapier"></use>
-                    </svg>
-                  </div>
-                  <div class="wrap wrap--c wrap--dc wrap--mid">
-                    <h4>Zapier</h4>
-                    <p>Используйте данные и происходящие события в более чем 1000 интеграциях для автоматизации вашего рабочего процесса.</p>
-                  </div>
-                  <div class="wrap wrap--bot wrap--sb wrap--w"><a class="link link--accent" href="https://zapier.com/app/editor/61180830/nodes/61180830/app" target="_blank">Настройте интеграцию прямо сейчас</a></div>
+              <div class="col col--right">
+                <div class="card card--dark card--support">
+                  <h2 class="card__title">Корпоративным клиентам</h2>
+                  <p class="card__sub">Если вы пользователь Dialog enterprise — воспользуйтесь центром поддержки для корпоративных клиентов. В случае отсутствия доступа — свяжитесь с вашим администратором.</p>
+                  <div class="wrap wrap--mt"><a class="link link--accent link--icon-accent link--with-icon" href="https://support.dlg.im/" target="_blank">Центр поддержки клиентов
+                      <svg width="12" height="10" aria-hidden="true">
+                        <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                      </svg></a></div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card card--outline">
-                  <div class="wrap wrap--c wrap--up">
-                    <svg width="150" height="90" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-webhooks"></use>
-                    </svg>
-                  </div>
-                  <div class="wrap wrap--c wrap--dc wrap--mid">
-                    <h4>Webhooks</h4>
-                    <p>Функции Dialog в WebHooks как простой способ получения автоматических сообщений и обновления данных, отправленных в текстовый канал на вашем сервере/</p>
-                  </div>
+                <div class="card card--support">
+                  <p class="card__sub"><span>Связаться со службой поддержки можно также по  email: </span>
+                    <div class="wrap wrap--mt"><a class="link link--accent" href="mailto:support@dlg.im" target="_blank">support@dlg.im</a></div>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="box--pattern"></div>
-        </section>
-        <section class="cta cta--purple box--purple">
-          <div class="wrapper wrapper--main">
-            <div class="wrap wrap--c">
-              <h2 class="cta__title cta__title--sm">Появились вопросы?</h2>
-            </div>
-            <div class="wrap wrap--c">
-              <button class="button button--light button--md js-open-modal-hero" type="button"><span>Свяжитесь с нами</span>
-              </button>
-            </div>
-          </div>
-        </section>
+        </div>
       </main>
       <div class="page__footer">
         <footer class="footer">
