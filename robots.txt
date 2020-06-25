@@ -4,4 +4,4 @@ Disallow: /@joinchat
 Disallow: /@/joinchat
 Disallow: /joinchat
 Sitemap: https://dlg.im/sitemap.xml
-Host: https://dlg.im
+Host: https://dlg.ime
