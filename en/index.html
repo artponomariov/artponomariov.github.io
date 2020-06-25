@@ -7,6 +7,7 @@
   <link rel="preload" href="/fonts/Euclid-CircularA-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="shortcut icon" href="/img/favicon.png">
   <body>
     <div class="page">
       <header class="header js-header">
@@ -24,7 +25,7 @@
                 <li><a class="main-nav__link" href="/en/help">Help</a></li>
               </ul>
               <div class="main-nav__user-actions">
-                <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Get request</span>
+                <button class="button button--accent button--small main-nav__action-btn js-open-modal" type="button"><span>Get offer</span>
                 </button><a class="main-nav__link main-nav__link--no-padding" href="/ru/
             "><span class="header__lang">ru</span><span>На русском</span></a>
               </div>
@@ -120,7 +121,7 @@
                     </svg></span><b>Search</b></button>
                 <button class="tabs__control" type="button" data-tab-index="4"><span>
                     <svg width="28" height="27" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-bot"></use>
+                      <use xlink:href="/img/sprite.svg#icon-bot-dark"></use>
                     </svg></span><b>Chatbots</b></button>
               </div>
               <div class="tabs__wrapper">
@@ -230,7 +231,7 @@
               <div class="tabs__wrapper">
                 <button class="tabs__control tabs__control--mobile js-accordion-trigger" type="button" data-tab-index="5"><span>
                     <svg width="28" height="27" aria-hidden="true">
-                      <use xlink:href="/img/sprite.svg#icon-bot"></use>
+                      <use xlink:href="/img/sprite.svg#icon-bot-dark"></use>
                     </svg></span><b>Chatbots</b></button>
                 <div class="tabs__content js-accordion-details" data-tab-index="5">
                   <div class="tabs__left">
@@ -296,10 +297,10 @@
                   </li>
                 </ul>
               </li>
-            </ul><a class="link link--with-icon link--safety link--icon-accent" href="#!">Learn more
-              <svg width="16" height="15" aria-hidden="true">
-                <use xlink:href="/img/sprite.svg#arrow-right"></use>
-              </svg></a>
+            </ul><a class="link link--with-icon link--safety link--icon-accent" href="#!">Learn more</a>
+            <svg width="16" height="15" aria-hidden="true">
+              <use xlink:href="/img/sprite.svg#arrow-right"></use>
+            </svg>
           </div>
         </section>
         <section class="solutions box box--sand">
@@ -315,10 +316,9 @@
                 <div class="solutions__content solutions__content--1 solutions__cell-2">
                   <div class="solutions__content-wrap">
                     <h3>Business</h3>
-                    <p>Leading Russian companies have improved collaboration efficiency by integrating thousands of employees and corporate systems over Dialog.</p><a class="link link--with-icon link--icon-accent" href="#!">Learn more
-                      <svg width="16" height="15" aria-hidden="true">
-                        <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                      </svg></a>
+                    <p>Leading Russian companies have improved collaboration efficiency by integrating thousands of employees and corporate systems over Dialog.</p>
+                    <!--a(class="link link--with-icon link--icon-accent" href="#!")=t.link.learn-->
+                    <!--  +svg('arrow-right', 16, 15)-->
                   </div>
                 </div>
               </li>
@@ -331,10 +331,9 @@
                 <div class="solutions__content solutions__content--2 solutions__cell-1">
                   <div class="solutions__content-wrap">
                     <h3>Government organizations</h3>
-                    <p>Dialog provides reliable and secure communication in state-owned companies, meets the requirements for Import Substitution and the state program “Digital Economy”.</p><a class="link link--with-icon link--icon-accent" href="#!">Learn more
-                      <svg width="16" height="15" aria-hidden="true">
-                        <use xlink:href="/img/sprite.svg#arrow-right"></use>
-                      </svg></a>
+                    <p>Dialog provides reliable and secure communication in state-owned companies, meets the requirements for Import Substitution and the state program “Digital Economy”.</p>
+                    <!--a(class="link link--with-icon link--icon-accent" href="#!")=t.link.learn-->
+                    <!--  +svg('arrow-right', 16, 15)-->
                   </div>
                 </div>
               </li>
@@ -362,7 +361,7 @@
               </div>
               <div class="features__desc features__desc--direct"><span>
                   <svg width="20" height="19" aria-hidden="true">
-                    <use xlink:href="/img/sprite.svg#icon-bot"></use>
+                    <use xlink:href="/img/sprite.svg#icon-bot-light"></use>
                   </svg></span>
                 <h3>Bot SDK</h3>
                 <p>Bot SDK allows you to create bots and chatbots for Dialog. Bots automate repetitive routine operations and free up time for more complex tasks. SDK is available for JS, Java and Python.</p>
@@ -507,65 +506,43 @@
             </div>
           </div>
         </section>
-        <section class="blog box box--gray">
-          <div class="blog__wrapper">
-            <h2 class="blog__title">Blog</h2>
-            <ul class="blog__list">
-              <li class="blog__item"><a class="blog__card" href="/en/blog/bp_automation.html">
-                  <div class="blog__img-box">
-                    <picture>
-                      <source type="image/webp" srcset="/img/pages/blog/blog-1-desktop@1x.webp 1x, /img/pages/blog/blog-1-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-1-desktop@1x.jpg" srcset="/img/pages/blog/blog-1-desktop@2x.jpg 2x" alt="Изображение приложения" width="380" loading="lazy"/>
-                    </picture>
-                  </div>
-                  <div class="blog__text-box">
-                    <h3 class="blog__card-title">Messengers market. Hot topics and industry trends in 2018</h3>
-                    <div class="blog__text-info">
-                      <p>12 February, 2020</p>
-                      <div>
-                        <svg width="17" height="17" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-watch"></use>
-                        </svg><span>1 min</span>
-                      </div>
+        <section class="box box--gray">
+          <div class="blog">
+            <div class="blog__wrapper">
+              <h2 class="blog__title">Blog</h2>
+              <ul class="blog__list">
+                <li class="blog__item"><a class="blog__card" href="/en/blog/corporate-messenger-and-byod.html">
+                    <div class="blog__img-box">
+                      <picture>
+                        <source type="image/webp" srcset="/img/pages/blog/blog-en-1-desktop@1x.webp 1x, /img/pages/blog/blog-en-1-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-en-1-desktop@1x.jpg" srcset="/img/pages/blog/blog-en-1-desktop@2x.jpg 2x" alt="Blog card&gt;" width="380" loading="lazy"/>
+                      </picture>
                     </div>
-                  </div></a></li>
-              <li class="blog__item"><a class="blog__card" href="/en/blog/bp_automation.html">
-                  <div class="blog__img-box">
-                    <picture>
-                      <source type="image/webp" srcset="/img/pages/blog/blog-2-desktop@1x.webp 1x, /img/pages/blog/blog-2-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-2-desktop@1x.jpg" srcset="/img/pages/blog/blog-2-desktop@2x.jpg 2x" alt="Изображение приложения" width="380" loading="lazy"/>
-                    </picture>
-                  </div>
-                  <div class="blog__text-box">
-                    <h3 class="blog__card-title">Digital hygiene: how to protect correspondence in messengers from competitors</h3>
-                    <div class="blog__text-info">
-                      <p>10 February, 2019</p>
-                      <div>
-                        <svg width="17" height="17" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-watch"></use>
-                        </svg><span>1 min</span>
-                      </div>
+                    <div class="blog__text-box">
+                      <h3 class="blog__card-title">Corporate messenger and BYOD</h3>
+                    </div></a></li>
+                <li class="blog__item"><a class="blog__card" href="/en/blog/benefits-of-active-directory-compatible-corporate-messengers.html">
+                    <div class="blog__img-box">
+                      <picture>
+                        <source type="image/webp" srcset="/img/pages/blog/blog-en-2-desktop@1x.webp 1x, /img/pages/blog/blog-en-2-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-en-2-desktop@1x.jpg" srcset="/img/pages/blog/blog-en-2-desktop@2x.jpg 2x" alt="Blog card&gt;" width="380" loading="lazy"/>
+                      </picture>
                     </div>
-                  </div></a></li>
-              <li class="blog__item"><a class="blog__card" href="/en/blog/bp_automation.html">
-                  <div class="blog__img-box">
-                    <picture>
-                      <source type="image/webp" srcset="/img/pages/blog/blog-3-desktop@1x.webp 1x, /img/pages/blog/blog-3-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-3-desktop@1x.jpg" srcset="/img/pages/blog/blog-3-desktop@2x.jpg 2x" alt="Изображение приложения" width="380" loading="lazy"/>
-                    </picture>
-                  </div>
-                  <div class="blog__text-box">
-                    <h3 class="blog__card-title">Sberbank launched a corporate messenger</h3>
-                    <div class="blog__text-info">
-                      <p>15 February, 2019</p>
-                      <div>
-                        <svg width="17" height="17" aria-hidden="true">
-                          <use xlink:href="/img/sprite.svg#icon-watch"></use>
-                        </svg><span>1 min</span>
-                      </div>
+                    <div class="blog__text-box">
+                      <h3 class="blog__card-title">Benefits of Active Directory-compatible corporate messengers</h3>
+                    </div></a></li>
+                <li class="blog__item"><a class="blog__card" href="/en/blog/explaining-the-main-hosting-models-on-premise-server-self-hosted-hosted-cloud.html">
+                    <div class="blog__img-box">
+                      <picture>
+                        <source type="image/webp" srcset="/img/pages/blog/blog-en-3-desktop@1x.webp 1x, /img/pages/blog/blog-en-3-desktop@2x.webp 2x"/><img src="/img/pages/blog/blog-en-3-desktop@1x.jpg" srcset="/img/pages/blog/blog-en-3-desktop@2x.jpg 2x" alt="Blog card&gt;" width="380" loading="lazy"/>
+                      </picture>
                     </div>
-                  </div></a></li>
-            </ul><a class="link link--with-icon link--icon-accent" href="/blog">View all
-              <svg width="16" height="15" aria-hidden="true">
-                <use xlink:href="/img/sprite.svg#arrow-right"></use>
-              </svg></a>
+                    <div class="blog__text-box">
+                      <h3 class="blog__card-title">Explaining the main hosting models: On-premise (Server, Self-hosted), Hosted, Cloud</h3>
+                    </div></a></li>
+              </ul><a class="link link--with-icon link--icon-accent" href="/en/blog">View all
+                <svg width="16" height="15" aria-hidden="true">
+                  <use xlink:href="/img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
           </div>
         </section>
         <div class="form form--main fomr--career box box--white">
@@ -595,7 +572,8 @@
                     <select id="quantity-1" name="quantity-users">
                       <option value="1-100">1-100</option>
                       <option value="101-500">101-500</option>
-                      <option value="501 и больше">501 and more</option>
+                      <option value="501-1000">501-1000</option>
+                      <option value="1000+">1000+</option>
                     </select>
                     <label for="quantity-1">Number of users</label>
                   </div>
@@ -638,7 +616,6 @@
                     <ul>
                       <li><a class="link link--invert" href="/en/security">Security</a></li>
                       <li><a class="link link--invert" href="/en/integrations">Integrations</a></li>
-                      <li><a class="link link--invert" href="/en/download">Download</a></li>
                       <li><a class="link link--invert" href="/en/help">Help</a></li>
                     </ul>
                   </div>
@@ -655,15 +632,15 @@
             </div>
             <div class="footer__social-box">
               <ul class="social">
-                <li><a href="#!" target="_blank" rel="noopener noreferrer">
+                <li><a href="https://www.facebook.com/startdialog" target="_blank" rel="noopener noreferrer">
                     <svg width="11" height="23" aria-hidden="true">
                       <use xlink:href="/img/sprite.svg#social-fb"></use>
                     </svg></a></li>
-                <li><a href="#!" target="_blank" rel="noopener noreferrer">
+                <li><a href="https://vk.com/dlgim" target="_blank" rel="noopener noreferrer">
                     <svg width="23" height="13" aria-hidden="true">
                       <use xlink:href="/img/sprite.svg#social-vk"></use>
                     </svg></a></li>
-                <li><a href="#!" target="_blank" rel="noopener noreferrer">
+                <li><a href="https://github.com/dialogs" target="_blank" rel="noopener noreferrer">
                     <svg width="19" height="22" aria-hidden="true">
                       <use xlink:href="/img/sprite.svg#social-gh"></use>
                     </svg></a></li>
@@ -719,7 +696,8 @@
                       <select id="quantity-2" name="quantity-users">
                         <option value="1-100">1-100</option>
                         <option value="101-500">101-500</option>
-                        <option value="501 и больше">501 and more</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1000+">1000+</option>
                       </select>
                       <label for="quantity-2">Number of users</label>
                     </div>
