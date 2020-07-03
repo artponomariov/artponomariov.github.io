@@ -204,11 +204,11 @@
                   <input type="text" id="language" name="language" value="ru" hidden="hidden"/>
                   <div class="form__input-text-wrap">
                     <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
-                      <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса"/>
+                      <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
                       <label for="name-2">Ваше имя</label>
                     </div>
                     <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3 form__form-field--modal">
-                      <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com"/>
+                      <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
                       <label for="email-2">Ваша эл.почта</label>
                     </div>
                     <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2 form__form-field--modal">
@@ -216,7 +216,7 @@
                       <label for="phone-2">Телефон</label>
                     </div>
                     <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4 form__form-field--modal">
-                      <input type="text" id="company-2" name="company" placeholder="Название компании"/>
+                      <input type="text" id="company-2" name="company" placeholder="Название компании" required="required"/>
                       <label for="company-2">Название компании</label>
                     </div>
                     <div class="form__form-field form__form-field--text form__form-field--5 form__form-field--modal">
@@ -231,7 +231,7 @@
                   </div>
                   <div class="form__checkbox-wrap">
                     <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                      <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" checked="checked"/>
+                      <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
                       <label for="accept-2">Я согласен на обработку данных</label>
                     </div>
                     <div class="form__form-field form__form-field--checkbox form__form-field--modal">
@@ -252,6 +252,5 @@
     </div>
     <script src="/js/vendor.min.js"></script>
     <script src="/js/index.min.js"></script>
-    <script src="/js/email.js"></script>
   </body>
 </html>
