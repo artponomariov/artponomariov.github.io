@@ -18,7 +18,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title></title>
+  <title>Скачать | Dialog</title>
   <meta name="description" content="Это корпоративный мессенджер с возможностью установки на внутренний сервер организации">
   <link rel="preload" href="/fonts/Euclid-CircularA-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/Euclid-CircularA-Regular.woff2" as="font" crossorigin="anonymous">
@@ -58,7 +58,6 @@
               <div class="hero__left">
                 <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>macOS</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-2.3.3.168.dmg"><span>Скачать</span></a>
                 <p class="hero__text">Работает на macOS 10.10 (Yosemite) и выше</p>
-                <!--a.link.link--accent.hero__link(href=props.link)=t.download.instruction-->
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -74,7 +73,6 @@
               <div class="hero__left">
                 <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>Windows</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.amazonaws.com/dialog-ee-x-setup-2.3.3.155.exe"><span>Скачать</span></a>
                 <p class="hero__text">Работает на Windows 8 и выше</p>
-                <!--a.link.link--accent.hero__link(href=props.link)=t.download.instruction-->
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -90,7 +88,6 @@
               <div class="hero__left">
                 <h1 class="hero__title"><span>Dialog для&nbsp;</span><span>Linux</span></h1><a class="button button--dark hero__button" href="https://dialog-enterprise-x-desktop.s3.eu-west-2.amazonaws.com/dialog_ee_x_2.3.2_amd64.deb"><span>Скачать</span></a>
                 <p class="hero__text">Работает на Linux 4.6.x и выше</p>
-                <!--a.link.link--accent.hero__link(href=props.link)=t.download.instruction-->
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -109,7 +106,6 @@
                     <use xlink:href="/img/sprite.svg#icon-apple"></use>
                   </svg><span>Скачать из App Store</span></a>
                 <p class="hero__text">Работает на iOS 8.1 и выше</p>
-                <!--a.link.link--accent.hero__link(href=props.link)=t.download.instruction-->
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -128,7 +124,6 @@
                     <use xlink:href="/img/sprite.svg#icon-google-play"></use>
                   </svg><span>Скачать из Google Play</span></a>
                 <p class="hero__text">Работает на Android 8.1 и выше</p>
-                <!--a.link.link--accent.hero__link(href=props.link)=t.download.instruction-->
               </div>
               <div class="hero__right">
                 <div class="hero__img">
@@ -173,8 +168,8 @@
                   </div>
                   <select id="choice-linux">
                     <option selected="selected" disabled="disabled">Скачать</option>
-                    <option name="0">Linux 64</option>
-                    <option name="1">Linux 32</option>
+                    <option id="0">Linux 64</option>
+                    <option id="1">Linux 32</option>
                   </select>
                 </div>
               </div>
@@ -272,8 +267,8 @@
             <ul class="footer__doc-links">
               <li><a href="/ru/public" target="_blank" rel="noopener noreferrer">Социальная ответственность</a></li>
               <li><a href="/ru/legal" target="_blank" rel="noopener noreferrer">Правовая информация</a></li>
-              <li><a href="/docs/privacy_policy.pdf" download="privacy policy" target="_blank" rel="noopener noreferrer">Обработка персональных данных</a></li>
-              <li><a href="/docs/anti_corruption_policy.pdf" download="anti corruption policy" target="_blank" rel="noopener noreferrer">Политика по противодействию коррупции</a></li>
+              <li><a href="/docs/privacy_policy.pdf" target="_blank" rel="noopener noreferrer">Обработка персональных данных</a></li>
+              <li><a href="/docs/anti_corruption_policy.pdf" target="_blank" rel="noopener noreferrer">Политика по противодействию коррупции</a></li>
             </ul>
             <div class="footer__copyright">
               <p>© 2016—2020 ООО «Диалог»</p>
@@ -294,19 +289,19 @@
                   <form autocomplete="on" id="form-offer-modal" onsubmit="event.preventDefault();emailSendOffer('ru',true,'download');">
                     <div class="form__input-text-wrap">
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--1 form__form-field--modal">
-                        <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" requireda="requireda"/>
+                        <input type="text" id="name-2" name="name" pattern="([A-Za-zА-ЯЁа-яё-]{2,}\s?)+" placeholder="Ваше имя" title="Имя может состоять только из букв, пробелов и дефиса" required="required"/>
                         <label for="name-2">Ваше имя</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--m form__form-field--3 form__form-field--modal">
-                        <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" requireda="requireda"/>
+                        <input type="email" id="email-2" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша эл.почта" title="Email адрес должен быть типа: user@mail.com" required="required"/>
                         <label for="email-2">Ваша эл.почта</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--s form__form-field--2 form__form-field--modal">
-                        <input type="tel" id="phone-2" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" requireda="requireda"/>
+                        <input type="tel" id="phone-2" name="phone" placeholder="Телефон" title="Номер телефона должен начинаться с символов +7 и содержать 11 цифр" pattern="\+7[0-9]{10}" required="required"/>
                         <label for="phone-2">Телефон</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--s form__form-field--4 form__form-field--modal">
-                        <input type="text" id="company-2" name="company" placeholder="Название компании" requireda="requireda"/>
+                        <input type="text" id="company-2" name="company" placeholder="Название компании" required="required"/>
                         <label for="company-2">Название компании</label>
                       </div>
                       <div class="form__form-field form__form-field--text form__form-field--select form__form-field--5 form__form-field--modal">
@@ -321,7 +316,7 @@
                     </div>
                     <div class="form__checkbox-wrap">
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
-                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" requireda="requireda" checked="checked"/>
+                        <input class="visually-hidden" type="checkbox" id="accept-2" name="terms" required="required" checked="checked"/>
                         <label for="accept-2">Я согласен на обработку данных</label>
                       </div>
                       <div class="form__form-field form__form-field--checkbox form__form-field--modal">
